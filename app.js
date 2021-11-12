@@ -19,7 +19,8 @@ $.get('https://www.whenisthenextmcufilm.com/api', function(data) {
 $("#hero-button").click(function() {
 	var searchquery = $("#hero-input").val()
 
-	$.get('https://gateway.marvel.com:443/v1/public/characters?apikey=933ced7eb6f9c8aa29d8ec9545d590e2&name=' + searchquery, function(data) {
+	$.get('https://gateway.marvel.com/v1/public/characters?apikey=933ced7eb6f9c8aa29d8ec9545d590e2&name=' + searchquery, function(response) {
+		var data = response.data
 		if (data.results.length === 0){
 			$('#error-msg').removeClass('hidden')
 			$('#error-msg').html('No heroes found.')
