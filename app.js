@@ -4,7 +4,7 @@ $.get('https://www.whenisthenextmcufilm.com/api', function(data) {
 	$("#release-date").html(data.release_date)
 	$("#overview").html(data.overview)
 	$("#type").html(data.type)
-	$("#following-production").html(data.following_production.title)
+	$("#following-production").html('Next production: '+ data.following_production.title)
 }, 'json')
 
 // function addRow(tableRef, displayName, data) {
