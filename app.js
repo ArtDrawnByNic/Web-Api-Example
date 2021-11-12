@@ -16,7 +16,7 @@ $.get('https://www.whenisthenextmcufilm.com/api', function(data) {
 // 	newCell.appendChild(document.createTextNode(data));
 // }
 
-$("#hero-button").on('click', function() {
+$("#hero-button").click(function() {
 	var searchquery = $("#hero-input").val()
 
 	$.get('https://gateway.marvel.com:443/v1/public/characters?apikey=933ced7eb6f9c8aa29d8ec9545d590e2&name=' + searchquery, function(data) {
