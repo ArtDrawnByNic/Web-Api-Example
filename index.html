@@ -5,34 +5,36 @@
 		<link rel="stylesheet" type="text/css" href="app.css">
 	</head>
 	<body>
-		<div id="mcu">
-			<!-- Title -->
-			<h1 id="title"></h1>
-			<!-- Post Image -->
-			<img id="poster" src="">
-			<!-- Release Date -->
-			<h2 id="release-date"></h2>
-			<!-- Overview -->
-			<p id="overview"></p>
-			<!-- Type -->
-			<h3 id="type"></h3>
-			<!-- Following Production -->
-			<h2 id="following-production"></h2>
+		<div style="width: 100%;height: 100%;">
+			<div id="mcu">
+				<!-- Title -->
+				<h1 id="title"></h1>
+				<!-- Post Image -->
+				<img id="poster" src="">
+				<!-- Release Date -->
+				<h2 id="release-date"></h2>
+				<!-- Overview -->
+				<p id="overview"></p>
+				<!-- Type -->
+				<h3 id="type"></h3>
+				<!-- Following Production -->
+				<h2 id="following-production"></h2>
+			</div>
+
+			<div id="superhero">
+				<input id="hero-input" type="text">
+				<input id="hero-button" type="button" value="Search Hero">
+				<div id="error-msg" class="hidden"></div>
+
+				<!-- Hero Name -->
+				<h2 id="hero-name" class="hidden"></h2>
+				<!-- thumbnail -->
+				<img id="hero-image" class="hidden" src="">
+				<!-- Description -->
+				<p id="hero-description" class="hidden"></p>
+				<footer> Nic Laro™ 2021 </footer>
+			</div>
 		</div>
-
-		<div id="superhero">
-			<input id="hero-input" type="text">
-			<input id="hero-button" type="button" value="Search Hero">
-			<div id="error-msg" class="hidden"></div>
-
-			<!-- Hero Name -->
-			<h2 id="hero-name"></h2>
-			<!-- thumbnail -->
-			<img id="hero-image" src="">
-			<!-- Description -->
-			<p id="hero-description"></p>
-		</div>
-
 	<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>

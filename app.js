@@ -28,6 +28,7 @@ $("#hero-button").click(function() {
 		}
 
 		$('#error-msg').addClass('hidden')
+		$('#hero-name, #hero-image, #hero-description').removeClass('hidden')
 		$("#hero-name").html(data.results[0].name)
 		$("#hero-image").attr('src', data.results[0].thumbnail.path + '.' + data.results[0].thumbnail.extension)
 		$("#hero-description").html(data.results[0].description)
